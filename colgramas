@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto1.css">
+    <title>COLGRAMAS</title>
+</head>
+
+<body id="cuerpo">
+
+<div id="encabezado">
+
+<header id="encabezado" >
+
+    <img src="Bodega_ imagenes/imagen_png.png" class="logo1">
+
+<h1>COLGRAMAS</h1>
+<h2>S.I. REGISTRO DE ESTADO DE LAS MAQUINAS </h2>
+
+
+</header>
+
+<nav id="menu" >
+    <h1>BARRA DE MENU</h1>
+    <li>VALIDACION DE USUARIO </li>
+    <li>REGISTRAR ESTADO DE LAS MAQUINAS</li>
+    <li>VER INFORMES</li>
+
+
+</nav>
+
+<section id="seccion" >
+<article>
+<h2>MISION</h2>
+<img src="Bodega_ imagenes/instalación-de-grama.png" class="logo2">
+
+<P>Es una empresa dedicada al suministro e instalación <br>
+de toda clase de césped sintético de la más alta calidad. <br>
+ Se rige por la integridad y transparencia, <br>
+ estos principios han desempeñado un papel importante <br>
+ a la hora de construir un gran número de clientes y organizaciones. <br>  </P>
+
+</article>
+
+<article>
+
+<h2>VISION</h2>
+<img src="Bodega_ imagenes/images.png" class="logo3">
+
+<p>Ser la empresa número uno, especializada en venta, mantenimiento e instalación <br>
+de toda clase de césped sintético, proporcionando a nuestros clientes <br>
+el mejor producto en cualidad garantía y precio del mercado nacional e internacional. <br></p>
+
+</article>
+
+</section>
+
+<aside id="lateral" >
+  <form class="miforma" name="formulario"> 
+    <h4>FORMULARIO WEB: REGISTRO DE ESTADO DE MAQUINAS </h4>
+    <label for="">Id-Empleado</label>
+    <input type="number" required> <br>
+    <label for="">Id-Maquina</label>
+    <input type="number" required placeholder="Ingresar modelo" > <br>
+    <label for="">Fecha y Hora actual </label>
+    <input type="datetime-local" required> <br>
+    <label for="">Estado de la Maquina</label>
+    <input type="text" required> <br>
+    <input type="submit" name="enviar"   required> <br>
+
+</form> 
+</aside>
+
+
+
+<footer id="pie">
+<b>Calle 60 12-224 Local P 04 <br>
+E-mail: colgramas@gmail.com <br>
+TEL: 3202457614 <br>
+</b>
+
+</footer>
+</div>
+
+    
+</body>
+</html>
+
+
+css
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+font: bold 20px fantasy;
+color: rgb(68, 143, 143);
+
+}
+
+h2 {
+    font: bold 20px fantasy;
+    color: rgb(146, 139, 41);
+    
+    }
+  
+    
+body{
+text-align: center;
+}
+
+#cuerpo {
+    width: 960px;
+    margin: 10px auto;
+    text-align: left;
+float: center;
+}
+
+
+#encabezado {
+background-color: beige ;
+border: 2px solid #494949;
+padding: 20px;
+text-align: center;
+border-radius: 20px;
+margin-bottom: 20px;
+}
+
+
+#menu li{
+display: inline block;
+list-style: none;
+border: 2px solid #494949;
+padding: 20px;
+font: bold 14px verdana;
+text-align: center;
+background: -webkit-linear-gradient(top);
+background: -moz-linear-gradient(top);
+border-radius: 20px;
+margin-bottom: 20px;
+cursor: pointer;
+}
+
+#seccion {
+    float: left;
+    width: 660px;
+    margin: 100px auto;
+
+}
+
+article {
+    background-color: beige ;
+    border: 2px solid #494949;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+article footer {
+    text-align: right;
+}
+
+
+#lateral {
+    background-color: beige ;
+    border: 2px solid #494949;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+#pie {
+    background-color: beige ;
+    border: 2px solid #494949;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+
+
+.logo1 { 
+    width: 200px;
+}
+
+.logo2 {
+    width: 300px;
+}
