@@ -1,0 +1,140 @@
+/* -------------------------
+VARIABLES DE COLOR
+------------------------- */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222;
+    --card-bg: #f4f4f4;
+    --primary: #4caf50;
+}
+
+/* Modo oscuro */
+.dark {
+    --bg-color: #121212;
+    --text-color: #e6e6e6;
+    --card-bg: #1e1e1e;
+    --primary: #8bc34a;
+}
+
+/* -------------------------
+RESET
+------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background 0.4s ease, color 0.4s ease;
+    padding: 20px;
+}
+
+/* -------------------------
+HEADER
+------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Switch personalizado */
+.switch {
+    position: relative;
+    width: 50px;
+    height: 24px;
+}
+.switch input {
+    display: none;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    border-radius: 24px;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    border-radius: 50%;
+    background: white;
+    transition: .4s;
+}
+input:checked + .slider {
+    background: var(--primary);
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* -------------------------
+TARJETAS
+------------------------- */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* -------------------------
+RESPONSIVE
+------------------------- */
+
+/* Tablets */
+@media (min-width: 640px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* -------------------------
+FOOTER
+------------------------- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    opacity: .7;
+}
